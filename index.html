@@ -27,21 +27,20 @@
       </script>
 </head>
 <body>
-    <header class="px-5 bg-orange-50 w-fulls">
+    <header class="px-5 bg-orange-50 w-full border-[1px] border-black lg:border-0">
         <!-- navbar -->
         <nav class="py-5 max-w-screen-xl mx-auto flex items-center justify-between">
             <!-- logo and text -->
             <div class="flex gap-1.5 items-center font-bold max">
                 <img src="assets/logo-header.png" alt="Browse4Pets logo" class="w-7 lg:w-8">
-                <h1 class="text-2xl">Browse<span class="text-yellow-400">4</span>Pets</h1>
+                <h1 class="text-2xl hidden lg:block">Browse<span class="text-yellow-400">4</span>Pets</h1>
             </div>
-            
-            <div class="flex items-center gap-20 lg:visible lg:static absolute invisible">
+            <div class="lg:flex items-center gap-0 lg:gap-20 lg:visible lg:static hidden flex-wrap">
                 <!-- nav options -->
-                <div class="flex gap-5">
-                    <p class="text-black">Find a pet</p>
-                    <p class="text-black">Breeds</p>
-                    <p class="text-black">Contact us</p>
+                <div class="flex gap-5 flex-wrap">
+                    <a class="text-black" href="#">Breeds</a>
+                    <a class="text-black" href="#">Contact us</a>
+                    <a class="text-black" href="#">Find a pet</a>
                 </div>
                 <!-- search, notification, login and register -->
                 <div class="flex items-center gap-4">
@@ -51,7 +50,7 @@
                     <button class="bg-yellow-300 py-1 px-5 rounded-md">Register</button>
                 </div>
             </div>
-            <div class="lg:absolute lg:invisible">
+            <div class="lg:hidden">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
