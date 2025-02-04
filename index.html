@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets - Home</title>
     <link rel="shortcut icon" href="assets/logo-header.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <!-- google fonts cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +27,33 @@
       </script>
 </head>
 <body>
-    <header>
-        <nav class="bg-orange-50 h-6">
-
+    <header class="px-5 bg-orange-50 w-fulls">
+        <!-- navbar -->
+        <nav class="py-5 max-w-screen-xl mx-auto flex items-center justify-between">
+            <!-- logo and text -->
+            <div class="flex gap-1.5 items-center font-bold max">
+                <img src="assets/logo-header.png" alt="Browse4Pets logo" class="w-7 lg:w-8">
+                <h1 class="text-2xl">Browse<span class="text-yellow-400">4</span>Pets</h1>
+            </div>
+            
+            <div class="flex items-center gap-20 lg:visible lg:static absolute invisible">
+                <!-- nav options -->
+                <div class="flex gap-5">
+                    <p class="text-black">Find a pet</p>
+                    <p class="text-black">Breeds</p>
+                    <p class="text-black">Contact us</p>
+                </div>
+                <!-- search, notification, login and register -->
+                <div class="flex items-center gap-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <button class="bg-transparent py-1 px-5 rounded-md border-yellow-300 border-[1px]">LogIn</button>
+                    <button class="bg-yellow-300 py-1 px-5 rounded-md">Register</button>
+                </div>
+            </div>
+            <div class="lg:absolute lg:invisible">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
     
