@@ -26,13 +26,13 @@
         }
       </script>
 </head>
-<body>
-    <header class="px-5 bg-orange-50 w-full border-[1px] border-black lg:border-0">
+<body class="">
+    <header class="bg-yellow-50 lg:bg-gradient-to-r from-yellow-100 to-yellow-50 px-5 w-full border-[1px] border-black lg:border-0 mb-7 lg:mb-12">
         <!-- navbar -->
         <nav class="py-5 max-w-screen-xl mx-auto flex items-center justify-between">
             <!-- logo and text -->
             <div class="flex gap-1.5 items-center font-bold max">
-                <img src="assets/logo-header.png" alt="Browse4Pets logo" class="w-7 lg:w-8">
+                <img src="assets/logo-header.png" alt="Browse4Pets logo" class="w-8 lg:w-8">
                 <h1 class="text-2xl hidden lg:block">Browse<span class="text-yellow-400">4</span>Pets</h1>
             </div>
             <div class="lg:flex items-center gap-0 lg:gap-20 lg:visible lg:static hidden flex-wrap">
@@ -46,15 +46,83 @@
                 <div class="flex items-center gap-4">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-regular fa-bell"></i>
-                    <button class="bg-transparent py-1 px-5 rounded-md border-yellow-300 border-[1px]">LogIn</button>
-                    <button class="bg-yellow-300 py-1 px-5 rounded-md">Register</button>
+                    <button class="bg-transparent py-1 px-5 rounded-md border-[#FFDC26] border-[1px] hover:shadow-md">LogIn</button>
+                    <button class="bg-[#FFDC26] py-1 px-5 rounded-md hover:shadow-md">Register</button>
                 </div>
             </div>
             <div class="lg:hidden">
-                <i class="fa-solid fa-bars"></i>
+                <img src="assets/burger-bar.png" alt="menu icon" class="w-8">
             </div>
         </nav>
     </header>
+    <main class="px-5">
+      <section class="mx-auto max-w-screen-xl">
+        <div>
+          <h1 class="text-4xl lg:text-5xl lg:leading-tight font-bold mb-4 lg:mb-5 text-black">Pamper Your Pet,<br>Because They Deserve<br>the Best</h1>
+          <p class="text-base lg:text-lg text-gray-700 mb-4 lg:mb-5 max-w-lg">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="bg-[#FFDC26] py-1 px-5 rounded-md hover:shadow-md">Find a pet</button>
+        </div>
+        <div class="absolute bg-black top-64 lg:top-20 -z-10">
+          <img src="assets/cat-big.png" alt="cat image">
+        </div>
+      </section>
+      <!-- categories section -->
+      <section class="max-w-screen-xl mx-auto mt-64 lg:mt-[550px]">
+        <h1 class="text-3xl font-bold mb-8 lg:mb-10">Browse By Categories</h1>
+        
+        <!-- category cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 lg:gap-4">
+          <!-- dog card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/dog-cartoon.png" alt="cartoon dog image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Dog</h2>
+            <p>3 items</p>
+          </div>
+          <!-- fish card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/fish-cartoon.png" alt="cartoon fish image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Fish</h2>
+            <p>3 items</p>
+          </div>
+          <!-- cat card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/cat-cartoon.png" alt="cartoon cat image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Cat</h2>
+            <p>3 items</p>
+          </div>
+          <!-- birds card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/bird-cartoon.png" alt="cartoon bird image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Bird</h2>
+            <p>3 items</p>
+          </div>
+          <!-- small pet card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/mouse-cartoon.png" alt="cartoon rabbit image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Small Pets</h2>
+            <p>3 items</p>
+          </div>
+          <!-- rabbit card -->
+          <div class="bg-orange-300 rounded-lg flex items-center flex-col py-10">
+            <div class="p-3 bg-white rounded-full mb-3">
+              <img src="assets/rabbit-cartoon.png" alt="cartoon rabbit image" class="w-12 h-12">
+            </div>
+            <h2 class="text-lg font-semibold">Rabbit</h2>
+            <p>3 items</p>
+          </div>
+        </div>
+      </section>
+    </main>
     
 </body>
 </html>
