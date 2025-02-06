@@ -15,15 +15,17 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'custom': ['"ADLaM Display"', 'serif'],
-            }
-          }
+    const defaultTheme = require('tailwindcss/defaultTheme')
+
+    module.exports = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'custom': ['"ADLaM Display", serif'],
+          },
         }
       }
+    }
       </script>
 </head>
 <body class="font-['custom']">
@@ -62,7 +64,7 @@
         <div>
           <h1 class="text-4xl lg:text-5xl lg:leading-tight font-bold mb-4 lg:mb-5 text-black">Pamper Your Pet,<br>Because They Deserve<br>the Best</h1>
           <p class="text-base lg:text-lg text-gray-700 mb-4 lg:mb-5 max-w-lg">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-          <button class="bg-[#FFDC26] py-1 px-5 rounded-md hover:shadow-md">Find a pet</button>
+          <button class="bg-[#FFDC26] py-1 px-5 rounded-md animate-pulse hover:shadow-md hover:animate-none">Find a pet</button>
         </div>
         <div class="absolute bg-black top-64 md:top-80 lg:top-20 -z-10 mr-5 lg:mr-0">
           <img src="assets/cat-big.png " alt="cat image">
@@ -134,7 +136,7 @@
           <h1 class="text-3xl font-bold mb-8 lg:mb-10">Trending Pet Products</h1>
           <div class="grid grid-cols-2 lg:grid-cols-5 gap-2.5 lg:gap-4">
             <!-- big card -->
-            <div class="pl-5 bg-orange-300 pt-5 rounded-lg col-span-2 h-80 lg:row-span-3 lg:col-span-2 relative">
+            <div class="pl-5 bg-orange-300 pt-5 rounded-lg col-span-2 h-80 lg:h-auto lg:row-span-3 lg:col-span-2 relative">
                 <h1 class="text-xl font-bold mb-2">T-Shirt For Dogs</h1>
                 <p class="text-base text-black mb-3">Get awesome t-shirts for your pet dog</p>
                 <button class="py-3 px-4 bg-white rounded-md text-sm">SHOP NOW</button>
@@ -245,6 +247,36 @@
           </div>
         </div>
       </div>
+      </section>
+      <!-- everyday low price section -->
+      <section class="max-w-screen-xl mx-auto px-5 py-8">
+        <h1 class="text-3xl font-bold mb-8 lg:mb-10">Everyday Low Price</h1>
+        <div class="grid lg:grid-cols-[1.7fr_1fr] grid-cols-1 gap-4">
+          <!-- purple card -->
+          <div class="lg:flex rounded-lg justify-between lg:items-center bg-gradient-to-r from-purple-300 to-blue-300 flex-auto h-[500px]">
+            <div class="pl-10 pt-8 lg:pt-0">
+              <p class="text-black hidden lg:block">Under Price</p>
+              <h2 class="font-bold text-2xl">Pet Grooming Mitt</h2>
+              <p class="text-white font-bold hidden lg:block">(Easy Hair Removal)</p>
+              <p class="text-4xl text-white lg:text-black font-bold">$7.99</p>
+            </div>
+            <div class="flex lg:block justify-end">
+              <img src="assets/cute-dog-mid.png" alt="dog image" class="w-80 lg:w-fit">
+            </div>
+          </div>
+          
+          <!-- brown card -->
+           <div>
+            <div class="rounded-lg justify-between bg-gradient-to-r from-yellow-50 to-orange-200 h-[500px]">
+              <div class="pl-8 pt-9">
+                <p class="text-black text-2xl font-bold">T-Shirt for Dogs</p>
+                <p class="text-amber-400 text-4xl font-bold">$7.99</p>
+              </div>
+              <div class="flex justify-end -translate-y-4">
+                <img src="assets/cute-pet-mid.png" alt="dog image">
+              </div>
+           </div>
+        </div>
       </section>
     </main>
     <!-- -->
